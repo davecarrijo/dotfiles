@@ -1,0 +1,23 @@
+[user]
+	email = davecarrijodev@gmail.com
+	name = Patrik Carrijo
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	pager = less -X -F
+	editor = code --wait
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
+[diff]
+	tool = code
+[difftool "codium"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+	tool = code
+[mergetool "codium"]
+	cmd = code --wait $MERGED
