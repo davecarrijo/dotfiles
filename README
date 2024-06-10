@@ -1,4 +1,4 @@
-![nice](https://camo.githubusercontent.com/4282f5ade254e0c305f0f31cdf3b218f7433e0845fa1d0b1ef257d96bb2e2a5c/687474703a2f2f696d616765732e74686f75676874626f742e636f6d2f74686f75676874626f742d646f7466696c65732d70726f6d70742e706e67)
+![nice](https://github.com/davecarrijo/dotfiles/blob/master/showpic.png?raw=true)
 
 
 ## Requirements
@@ -11,14 +11,15 @@ chsh -s $(which zsh)
 ## Install
 
 Clone onto your laptop:
-```bash
+``` bash
 git clone git@github.com:thoughtbot/dotfiles. && git ~/dotfiles
 ```
 (Or, [fork and keep your fork
-updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
+updated]()).
 
 Install [rcm](https://github.com/thoughtbot/rcm):
-```bash
+
+``` bash
 brew install rcm
 ```
 Install the dotfiles:
@@ -41,7 +42,7 @@ configuration options:
 - Please configure the `rcrc` file if you'd like to make personal
   overrides in a different directory
 
-<!-- ## Update
+## Update
 
 From time to time you should pull down any updates to these dotfiles, and run
 
@@ -51,7 +52,7 @@ to link any new files and install new vim plugins. **Note** You _must_ run
 `rcup` after pulling to ensure that all files in plugins are properly installed,
 but you can safely run `rcup` multiple times so update early and update often!
 
-Your `~/dotfiles-local/vimrc.bundles.local` might look like this: -->
+Your `~/dotfiles-local/vimrc.bundles.local` might look like this:
 
 
 ## zsh Configurations
