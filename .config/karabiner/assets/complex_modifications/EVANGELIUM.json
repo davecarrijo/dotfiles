@@ -1,0 +1,64 @@
+{
+  "title": "dave´s keys for vscode: shifter symbols PT-PT layot",
+  "version": "1.0.0",
+  "maintainers": ["Davecarrijo"],
+  "homepage": "https://github.com/davecarrijo/Fn_blender",
+  "rules": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "comma"
+      },
+      "to": [
+        {
+          "key_code": "comma",
+          "modifiers": {
+            "mandatory": ["shift"]
+          }
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "comma",
+        "modifiers": {
+          "mandatory": ["shift"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "comma"
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "period"
+      },
+      "to": [
+        {
+          "key_code": "period",
+          "modifiers": {
+            "mandatory": ["shift"]
+          }
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "period",
+        "modifiers": {
+          "mandatory": ["shift"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "period"
+        }
+      ]
+    }
+  ]
+}

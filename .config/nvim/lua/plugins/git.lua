@@ -1,0 +1,24 @@
+local plugins = {
+  {
+    "sindrets/diffview.nvim",
+    opts = {},
+  },
+  {
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim", -- required
+      "sindrets/diffview.nvim", -- optional - Diff integration
+
+      -- Only one of these is needed, not both.
+      "nvim-telescope/telescope.nvim", -- optional
+    },
+    opts = {
+      integrations = {
+        diffview = true,
+        telescope = true,
+      },
+    },
+  },
+}
+
+return plugins
