@@ -1,5 +1,6 @@
 ![nice](https://github.com/davecarrijo/dotfiles/blob/master/showpic.png?raw=true)
 
+This dotfiles include my personal Nightab.json and vscode $profile.json
 
 ## Requirements
 
@@ -7,6 +8,20 @@ Set zsh as your login shell:
 ``` bash
 chsh -s $(which zsh)
 ```
+install neovim as your main editor && vs code as second :<p>
+Mac/linux
+``` bash
+brew install neovim
+```
+Windows
+``` powershell
+winget install Neovim.Neovim
+```
+install tmux as your divide shell:
+``` bash
+brew install tmux
+```
+
 
 ## Install
 
