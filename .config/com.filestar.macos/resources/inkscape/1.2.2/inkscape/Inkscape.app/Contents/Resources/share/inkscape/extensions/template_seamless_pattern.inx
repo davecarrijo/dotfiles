@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension" xmlns:ns1="http://www.inkscape.org/namespaces/inkscape">
+    <name>Seamless Pattern</name>
+    <id>org.inkscape.template.seamless_pattern</id>
+
+    <param name="width" gui-text="Custom Width (px):" type="int" min="1" max="99999999" gui-hidden="true">100</param>
+    <param name="height" gui-text="Custom Height (px):" type="int" min="1" max="99999999" gui-hidden="true">100</param>
+    
+    <effect needs-live-preview="false">
+        <object-type>all</object-type>
+        <effects-menu hidden="true" />
+    </effect>
+    <ns1:templateinfo>
+      <ns1:name>Seamless Pattern...</ns1:name>
+      <ns1:author>Jabiertxof</ns1:author>
+      <ns1:shortdesc>Create seamless patterns.</ns1:shortdesc>
+      <ns1:date>2014-10-16</ns1:date>
+      <ns1:keywords>live seamless patterns</ns1:keywords>
+    </ns1:templateinfo>
+
+    <script>
+        <command location="inx" interpreter="python">template_seamless_pattern.py</command>
+    </script>
+</inkscape-extension>

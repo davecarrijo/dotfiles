@@ -35,6 +35,7 @@ dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
 require "nvchad.autocmds"
+require('mini.move').setup()
 
 vim.schedule(function()
   require "mappings"

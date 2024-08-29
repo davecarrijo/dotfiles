@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Python</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Python Runtime and Library</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.python.python</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleLongVersionString</key>
+	<string>3.10.7, (c) 2001-2021 Python Software Foundation.</string>
+	<key>CFBundleName</key>
+	<string>Python</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.10.7, (c) 2001-2021 Python Software Foundation.</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>3.10.7</string>
+	<key>CICommitBranch</key>
+	<string></string>
+	<key>CICommitSha</key>
+	<string>a78f2d0f3670864709f299de21cfeb0e6cfc108f</string>
+	<key>CICommitShortSha</key>
+	<string>a78f2d0f</string>
+	<key>CIJobId</key>
+	<string>3133487571</string>
+	<key>CIJobName</key>
+	<string>build: [3.10.7, macosintel, inkscape]</string>
+	<key>CIJobUrl</key>
+	<string>https://gitlab.com/dehesselle/python_macos/-/jobs/3133487571</string>
+	<key>CIPipelineId</key>
+	<string>659511595</string>
+	<key>CIPipelineUrl</key>
+	<string>https://gitlab.com/dehesselle/python_macos/-/pipelines/659511595</string>
+	<key>CIProjectName</key>
+	<string>python_macos</string>
+	<key>CIProjectUrl</key>
+	<string>https://gitlab.com/dehesselle/python_macos</string>
+</dict>
+</plist>

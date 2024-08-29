@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Isometric Grid</name>
+  <id>org.inkscape.render.grid_isometric</id>
+  <param name="x_divs" type="int" min="1" max="1000" gui-text="X Divisions [x2]:" gui-hidden="true">5</param>
+  <param name="y_divs" type="int" min="1" max="1000" gui-text="Y Divisions [x2] [&gt; 1/2 X Div]:" gui-hidden="true">5</param>
+  <param name="dx" type="float" min="1" max="1000" gui-text="Division Spacing (px):" gui-hidden="true">50.0</param>
+  <param name="subdivs" type="int" min="1" max="1000" gui-text="Subdivisions per Major Division:" gui-hidden="true">2</param>
+  <param name="subsubdivs" type="int" min="1" max="1000" gui-text="Subsubdivs per Subdivision:" gui-hidden="true">5</param>
+  <param name="divs_th" type="float" min="0" max="1000" gui-text="Major Division Thickness (px):" gui-hidden="true">2</param>
+  <param name="subdivs_th" type="float" min="0" max="1000" gui-text="Minor Division Thickness (px):" gui-hidden="true">0.5</param>
+  <param name="subsubdivs_th" type="float" min="0" max="1000" gui-text="Subminor Division Thickness (px):" gui-hidden="true">0.1</param>
+  <param name="border_th" type="float" min="0" max="1000" gui-text="Border Thickness (px):" gui-hidden="true">3</param>
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu name="Render">
+          <submenu name="Grids" />
+      </submenu>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">grid_isometric.py</command>
+  </script>
+</inkscape-extension>

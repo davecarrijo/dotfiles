@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Set a layout group</name>
+    <id>org.inkscape.web.slicer.create_group</id>
+    <dependency type="file" location="inx">webslicer_effect.py</dependency>
+    <param name="tab" type="notebook" gui-hidden="true">
+        <page name="Options" gui-text="Options">
+            <param name="html-id" type="string" gui-text="HTML id attribute:" gui-hidden="true" />
+            <param name="html-class" type="string" gui-text="HTML class attribute:" gui-hidden="true" />
+            <param name="width-unity" type="optiongroup" appearance="combo" gui-text="Width unit:" gui-hidden="true">
+            <option value="px">Pixel (fixed)</option>
+            <option value="percent">Percent (relative to parent size)</option>
+            <option value="undefined">Undefined (relative to non-floating content size)</option>
+            </param>
+            <param name="height-unity" type="optiongroup" appearance="combo" gui-text="Height unit:" gui-hidden="true">
+            <option value="px">Pixel (fixed)</option>
+            <option value="percent">Percent (relative to parent size)</option>
+            <option value="undefined">Undefined (relative to non-floating content size)</option>
+            </param>
+            <param name="bg-color" type="string" gui-text="Background color:" gui-hidden="true" />
+        </page>
+        <page name="Help" gui-text="Help">
+            <label>Layout Group is only about to help a better code generation (if you need it). To use this, you must to select some "Slicer rectangles" first.</label>
+        </page>
+    </param>
+    <effect needs-live-preview="false">
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Web">
+                <submenu name="Slicer" />
+            </submenu>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">webslicer_create_group.py</command>
+    </script>
+</inkscape-extension>

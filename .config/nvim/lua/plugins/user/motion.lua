@@ -16,6 +16,13 @@ local plugins = {
       },
     },
   },
+  { 'echasnovski/mini.move', version = '*',
+-- Options which control moving behavior
+options = {
+  -- Automatically reindent selection during linewise vertical move
+  reindent_linewise = true,
+}, },
+  { 'echasnovski/mini.surround', version = '*', },
   {
     "folke/flash.nvim",
     event = "BufEnter",

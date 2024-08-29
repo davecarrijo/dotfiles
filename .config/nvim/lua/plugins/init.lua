@@ -15,6 +15,8 @@ return {
       }
     end,
   },
+  { 'echasnovski/mini.move', version = '*', },
+  { 'echasnovski/mini.surround', version = '*', },
   {
     "kevinhwang91/nvim-ufo",
     event = "BufEnter",

@@ -4,6 +4,38 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
+--
+-- mini.move
+--
+-- alt + arrows
+require('mini.move').setup({
+  mappings = {
+    left  = '<M-left>',
+    right = '<M-right>',
+    down  = '<M-down>',
+    up    = '<M-up>',
+
+    line_left  = '<M-left>',
+    line_right = '<M-right>',
+    line_down  = '<M-down>',
+    line_up    = '<M-up>',
+  }
+
+})
+--
+-- mini.surrounds
+--
+require("mini.surround").setup({
+  custom_surroundings = {
+    ["b"] = { output = { left = "(", right = ")" } },
+    ["B"] = { output = { left = "{", right = "}" } },
+    ["r"] = { output = { left = "[", right = "]" } },
+  },
+  silent = true,
+})
+-- Ctrl + Backspace deletion
+map('i', '<C-h>', '<C-w>')
+
 map("n", "<leader>me", "<cmd>set mouse=a<CR>", { desc = "Mouse Enable" })
 map("n", "<leader>md", "<cmd>set mouse=<CR>", { desc = "Mouse Disable" })
 map("n", ";", ":", { desc = "CMD enter command mode" })

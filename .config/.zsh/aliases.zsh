@@ -37,6 +37,8 @@ alias ll="eza -al -alh"
 alias tree="eza --tree --color always"
 alias g="goto"
 alias grep='grep --color'
+
+alias cd='z'
 ## Cat to bat
 alias cat="bat"
 ## Git
@@ -56,4 +58,8 @@ alias tf="terraform"
 alias a="ansible"
 alias ap="ansible-playbook"
 alias dt="datree"
+
+
+#broalias, run the before comand as sudo or just use sudo!!
+alias bro='echo you got it bro && sudo $(fc - ln - 1)'
 
